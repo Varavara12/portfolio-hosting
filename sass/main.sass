@@ -1,0 +1,758 @@
+@import vars
+@import fonts
+@import libs
+@import helpers
+@import contact
+@import slick-dots
+@import burger
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #000
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+*, *::after, ::before
+  box-sizing: border-box
+
+
+
+body
+
+  font-family: 'Montserrat', sans-serif
+  font-size: 16px
+  color: $black
+  line-height: normal
+  &.no-scroll
+    overflow: hidden
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+.header
+  padding: 18px 0
+  position: relative
+
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding-left: 1rem
+  padding-right: 1rem
+
+.header__inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.user
+  display: flex
+
+.user__content
+  padding-left: 9px
+  margin-top: 5px
+  text-align: initial
+.user__avatar
+  img
+    border-radius: 50%
+    width: 57px
+    height: 57px
+    background-color: $gray
+
+.user__name
+  font-size: 16px
+  font-weight: 700
+  color: $black
+  line-height: 18px
+
+
+.user__prof
+  font-size: 12px
+  color: rgba(#2B2A2C, .7 )
+
+.nav
+  display: flex
+  flex-wrap: wrap
+  height: 100%
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.nav__link
+  color: $black
+  margin-left: 30px
+  padding: 10px 0
+  position: relative
+  &:after
+    content: ''
+    background-color: $black
+    width: 0
+    height: 2px
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 1
+    transition: width .2s linear
+  &:hover
+    text-decoration: none
+    color: red
+    transition: color .40s ease
+    &:after
+      width: 100%
+
+.button
+  padding: 8px 30px
+  color: $black
+  margin: 0 0 0 30px
+  &:hover
+    text-decoration: none
+    color: $black
+    transition: color .40s ease
+
+.button--moema
+  background: none
+  border: 2px solid $black
+  &:hover
+    background-color: red
+
+/* Intro */
+
+
+
+.intro__inner
+  display: flex
+  text-align: initial
+  padding-bottom: 123px
+  padding-top: 103px
+  background: url("../img/bg.png") right bottom no-repeat
+  position: relative
+
+.intro__content
+  width: 50%
+  .btn
+    .button
+      background-color: chartreuse
+
+.intro__photo
+  display: block
+  position: absolute
+  right: 0
+  bottom: 0
+  max-width: 100%
+  height: auto
+
+.intro__subtitle
+  font-size: 32px
+  font-weight: 200
+  color: $black
+
+.intro_title
+  font-size: 45px
+  font-weight: 700
+  color: $black
+
+.intro__text
+  font-size: 18px
+  color: rgba(#2B2A2C, .7 )
+  margin-bottom: 25px
+
+  /* Social icons*/
+
+.social
+  margin-bottom: 42px
+  display: flex
+
+.social__link
+  margin-right: 10px
+  transition: transform .2s linear
+
+  &:hover
+    transform: translateY(-5px)
+    
+  /* buttons */
+  
+.btr
+  margin-left: 0
+  margin-right: 15px
+  .button
+    background: $black
+    color: #fff
+    padding: 15px 51px
+    &:hover
+      box-shadow: 2px 2px 10px rgba(#000, .50)
+
+.btn
+  .button
+    border: 1px solid $gray
+    padding: 15px 27px
+    &:hover
+      box-shadow: 2px 2px 10px rgba(red, .50)
+
+/* Water */
+
+.water
+  .wave
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 80px
+    background: url("../img/wave.png")
+    background-size: 1000px 100px
+
+  .wave1
+    animation: animate 15s linear infinite
+    z-index: 1000
+    opacity: 1
+    animation-delay: 0s
+    bottom: 0
+
+
+  .wave2
+    animation: animate2 7s linear infinite
+    z-index: 999
+    opacity: 0.5
+    animation-delay: -5s
+    bottom: 7px
+
+  .wave3
+    animation: animate 15s linear infinite
+    z-index: 997
+    opacity: 0.2
+    animation-delay: -2s
+    bottom: 7px
+
+  .wave4
+    animation: animate2 7s linear infinite
+    z-index: 996
+    opacity: 0.7
+    animation-delay: 0s
+    bottom: 9px
+
+@keyframes animate
+  0%
+    background-position-x: 0
+  100%
+    background-position-x: 1000px
+
+@keyframes animate2
+  0%
+    background-position-x: 0
+  100%
+    background-position-x: -1000px
+
+/* Portfolio */
+.work__nav
+  padding-top: 15px
+  background-color: #303030
+  display: flex
+  justify-content: center
+  .work__nav-link
+    margin: 0 22px
+    font-size: 14px
+    color: rgba(#fff, .40 )
+    &:hover
+      text-decoration: underline
+
+.project
+  background-color: #303030
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 15px 0 20px
+  h1
+    position: relative
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    white-space: nowrap
+    color: #303030
+    &:before
+      content: attr(data-text)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border-right: 1px solid #fff
+      white-space: nowrap
+      overflow: hidden
+      background: linear-gradient( to right, #f00, #ff0, #0ff, #0f0, #ffc800)
+      -webkit-background-clip: text
+      color: transparent
+      animation: type 3s steps(10) infinite
+      filter: blur(0.5px)
+
+@keyframes type
+  0%
+    width: 0
+  70%
+    width: 100%
+  90%
+    width: 100%
+  100%
+    width: 0
+
+.portfolio
+  display: flex
+  flex-wrap: wrap
+  background-color: #303030
+  top: 0
+  position: relative
+  z-index: 2
+
+  .portfolio__col
+    flex-basis: 33.33333%
+    padding:  30px
+    .shadow
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        top: -5px
+        left: -5px
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000)
+        background-size: 1000%
+        width: calc(100% + 4px)
+        height: calc(100% + 4px)
+        z-index: -1
+        border-radius: 10px
+        animation: animate3 20s linear infinite
+        filter: blur(10px)
+
+    .work
+      box-shadow: 0 0 4px rgba(#fff, 25%)
+      border-radius: 10px
+
+      .work__img
+        .img
+          max-width: 100%
+          height: auto
+          display: block
+          border-radius: 10px
+      .work_content
+        .work__title
+          padding: 15px 12px
+          color: #fff
+          font-weight: 700
+          font-size: 15px
+
+@keyframes animate3
+  0%
+    background-position: 0 0
+  50%
+    background-position: 400% 0
+  100%
+    background-position: 0 0
+
+/* About */
+
+.about
+
+  .container
+    .water
+      position: relative
+      transform: rotate(180deg)
+      left: 0
+      .wave
+        position: absolute
+        background: url("../img/wave.png")
+        background-size: 1000px 100px
+
+  .about__inner
+    display: flex
+    flex-wrap: wrap
+    max-width: 1090px
+    margin: 126px 0
+
+    .about__photo
+      width: 50%
+      position: relative
+
+      &:before
+        content: ''
+        bottom: 0
+        width: 320px
+        height: 320px
+        position: absolute
+        background-color: #e41f1f
+        left: 0
+        z-index: 1
+      .img
+        display: block
+        max-width: 100%
+        height: auto
+        z-index: 2
+        position: absolute
+        bottom: 0
+    .about__content
+      text-align: initial
+      width: 50%
+      margin-top: 30px
+
+    .about__title
+      font-size: 3rem
+      font-weight: 700
+      color: $black
+    .about__bigtitle
+      font-size: 93px
+      color: rgba($black, .20)
+      margin-bottom: 21px
+      position: relative
+      left: -10px
+    .about__text
+      line-height: 30px
+      color: $gray
+      margin-bottom: 40px
+      
+
+
+/* reviews */
+
+.reviews
+  background: #332f30 url("../img/vector.png") center no-repeat
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 40px 0 20px
+  .reviews_col
+    color: #fff
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 700
+
+  .reviews__item
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    .reviews__contact
+      flex-basis: 33.33333%
+
+      color: #fff
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 16px
+
+
+
+/* footer */
+
+.footer
+  background-color: $black
+  padding: 4px 0
+  .footer__inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .footer__credits
+      display: flex
+      align-items: center
+      .footer__copyright
+        color: #BBBBCC
+        font-size: 14px
+        border-right: 1px solid rgba($gray, .30)
+        padding-right: 12px
+        margin-right: 15px
+      .footer__social
+        display: flex
+        align-items: center
+        .social__link
+          img
+            width: 24px
+    .footer__nav
+      font-size: 14px
+      display: flex
+      align-items: center
+      .footer__nav-link
+        color: #BBBBCC
+        margin-left: 24px
+      .button
+        background-color: #fff
+
+
+
+/* Modals */
+
+.modal
+  display: none
+  width: 100%
+  height: 100%
+  padding: 15px
+  background-color: rgba($black, .80)
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1600
+  overflow: auto
+  &.show
+    display: flex
+  .modal__dialog
+    width: 100%
+    max-width: 1200px
+    margin: auto
+    background-color: #fff
+    position: relative
+    overflow: auto
+    transform:  rotateX(90deg)
+    transition: transform .2s linear
+    &--sm
+      max-width: 900px
+    .modal__close
+
+      position: absolute
+      top: .9rem
+      right: .9rem
+      z-index: 1
+      padding: 0
+      background: none
+      border: 0
+      cursor: pointer
+      transition: transform .2s linear
+      &:hover
+        transform: rotate(90deg)
+    .modal__work
+      display: flex
+      .modal__work-preview
+        width: 65%
+        position: relative
+        overflow: hidden
+        padding: 20px
+        background-color: lavender
+        .modal__work-photo
+          position: absolute
+          top: 50%
+          left: 50%
+          z-index: 1
+          transform: translate3d(-50%, -50%, 0)
+
+          height: 100%
+      .modal__work-content
+        width: 35%
+        padding: 50px 99px 15px 26px
+        position: relative
+        .modal__work-btn
+          .btr
+            margin-bottom: 50px
+
+        .modal__work-header
+          margin-bottom: 33px
+          .modal__work-title
+            font-size: 25px
+            font-weight: 700
+            text-transform: uppercase
+            color: $black
+            margin-bottom: .2rem
+
+          .modal__work-info
+            font-size: 18px
+            color: $gray
+            text-transform: uppercase
+            .modal__work-info-divider
+              margin: 0 15px
+
+        .modal__work-author
+          .modal__work-author__title
+            font-size: 16px
+            color: $black
+            font-weight: 700
+            margin-bottom: 3px
+          .modal__work-author__company
+            font-size: 14px
+            color: $gray
+            font-style: italic
+            margin-bottom: 33px
+
+        .modal__work-text
+          font-size: 12px
+          color: $black
+          line-height: 24px
+          margin-bottom: 50px
+
+        .modal__work-footer
+          width: 100%
+          display: flex
+          justify-content: space-between
+          position: absolute
+          bottom: 0
+          left: 0
+          z-index: 1
+          padding: 0 27px 15px
+          .modal__work-btn
+            font-size: 14px
+            color: $black
+            text-transform: uppercase
+            background: none
+            border: 0
+            padding: 0
+            font-family: inherit
+            cursor: pointer
+            img
+              margin-bottom: 2px
+
+
+/* Modals windows 2 */
+
+.modal__content
+  padding: 75px 15px
+  position: relative
+  .modal__title
+    text-transform: uppercase
+    color: $black
+    font-weight: 700
+    font-size: 45px
+    margin-bottom: 45px
+
+  .text__center
+    text-align: center
+    right: 50px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .button
+      float: none
+      display: initial
+    .thin
+      background: $black
+      color: #fff
+      padding: 8px 50px
+
+  .timeline
+    margin: 63px  auto
+    display: flex
+    width: 100%
+    max-width: 768px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 1px
+      height: 100%
+      background-color: $black
+      top: 0
+      left: 50%
+      z-index: 1
+    .timeline__span
+      color: red
+
+    .timeline__col
+      width: 50%
+      &--left
+        text-align: right
+        padding-right: 48px
+      &--right
+        padding-left: 48px
+
+      .timeline__title
+        font-size: 18px
+        color: $black
+        text-transform: uppercase
+        font-weight: 700
+        margin-bottom: 27px
+
+      .timeline__item
+        margin-bottom: 38px
+        text-transform: uppercase
+        &:last-child
+          margin-bottom: 0
+          margin-top: 35px
+        &--skills
+          margin-top: 35px
+          .timeline__text--skills
+            line-height: 21px
+        .timeline__date
+          display: block
+          text-decoration: underline
+          font-size: 16px
+          margin-bottom: 12px
+        .timeline__subtitle
+          font-size: 16px
+          font-weight: 700
+          margin-bottom: 5px
+          &--sub
+            margin-bottom: 8px
+        .timeline__text
+          font-size: 14px
+          &--letter
+            line-height: 20px
+        .timeline__text--title
+          text-transform: none
+        .timeline__text--button
+          .timeline__text--link
+            text-decoration: none
+            color: red
+            transition: transform .2s linear
+            &:hover
+              color: green
+              transition: color .40s ease
+      .progress-bar
+        margin-bottom: 15px
+        .progress-bar__item
+          display: flex
+          align-items: center
+          margin-bottom: 5px
+          justify-content: space-between
+          .progress-bar__left
+            .progress-bar__title
+              font-size: 14px
+              font-weight: 300
+          .progress-bar__right
+            padding-left: 18px
+            .progress-bar__bar
+              width: 139px
+              height: 6px
+              background-color: #96c6ef
+              .progress-bar__progress
+                height: 100%
+                background-color: $gray
+                transition: width .2s linear
+
+.modal__work-text span
+  text-transform: uppercase
+
+
+
+
+
+@import "media.sass"
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

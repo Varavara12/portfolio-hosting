@@ -1,0 +1,68 @@
+.contact
+  display: flex
+
+  .contact__right
+    width: 53%
+    background: url("../img/orig.jpg") center no-repeat
+  .contact__left
+    width: 47%
+    padding: 30px
+    .modal__title
+      font-size: 45px
+    .modal__subtitle
+      font-size: 16px
+    .contact__info
+      padding: 0
+      list-style: none
+      margin: 30px 0 45px
+      font-size: 14px
+      font-weight: 300
+      img
+        width: 16px
+
+    .contact__info-item
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0
+      .contact__info-icon
+        margin-right: 15px
+
+  .form
+    .form__group
+      margin-bottom: 27px
+      .form__label
+        font-size: 14px
+        font-weight: 700
+        display: inline-block
+        margin-bottom: 9px
+      .form__input,
+      .form__textarea
+        display: block
+        width: 100%
+        padding: 18px 21px
+        font-family: inherit
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+        border: 1px solid rgba(#707070, .30)
+        border-radius: 27px
+        transition: border-color .2s linear
+        color: #2B2A2C
+        &:focus
+          outline: none
+          border-color: #007bff
+
+    .button
+      text-align: center
+      border: 1px solid #2b2a2c
+
+.form__textarea
+  height: 200px
+  resize: none
+  &::placeholder
+    color: #2B2A2C
+
+
+

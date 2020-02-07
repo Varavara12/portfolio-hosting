@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Portfolio</title>
+	<meta name="description" content="CV">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="img/user.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Header -->
+    <header class="header">
+
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="img/user.jpg" alt="аватарка">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Vitalii <br> Kropotkin</div>
+                        <div class="user__prof">Front-End React-Redux</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#">WORK</a>
+                    <a class="nav__link" href="#">ABOUT ME</a>
+                    <a class="nav__link" href="#">BLOG</a>
+                    <a class="nav__link" href="#">CONTACT</a>
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="img/menu.svg" alt="menu">
+                </button>
+
+            </div>
+        </div>
+
+    </header>
+
+<!-- Intro -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello, I’m</h2>
+                    <h1 class="intro_title">Vitalii Kropotkin</h1>
+                    <div class="intro__text">Front-End, React-Redux</div>
+                    <div class="social">
+                        <a href="http://www.linkedin.com/in/vitalii-kropotkin-040b4b182" target="_blank" class="social__link"><img src="img/social/linked.svg" alt=""></a>
+                        <a href="https://github.com/Varavara12" target="_blank" class="social__link"><img src="img/social/git.svg" alt=""></a>
+                        <a href="https://www.facebook.com/vitalik.kropotkin" target="_blank" class="social__link"><img src="img/social/facebook.svg" alt=""></a>
+                        <a href="https://www.instagram.com/vitalikkropotkin/?hl=ru" target="_blank" class="social__link"><img src="img/social/instagram.svg" alt=""></a>
+                        <a href="https://vk.com/vitalik_pro" target="_blank" class="social__link"><img src="img/social/vk.svg" alt=""></a>
+                    </div>
+                    <div class="btr"> <a class="button button--moema button--text-thick button--text-upper button--size-s btr" href="#" data-modal="#modal_hire_me">HIRE ME</a></div>
+                    <div class="btn"><a class="button button--moema button--text-thick button--text-upper button--size-s btr" href="#" data-modal="#modal_resume">SEE MY RESUME</a></div>
+                </div>
+
+                <img class="intro__photo" src="img/user.png" alt="аватарка">
+
+                <div class="water">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Work -->
+<div class="works">
+    <div class="container">
+
+        <div class="work__nav">
+            <a href="#" class="work__nav-link" data-filter="all">All</a>
+            <a href="#" class="work__nav-link" data-filter="adaptive">Adaptive</a>
+            <a href="#" class="work__nav-link" data-filter="desktop" >Desktop</a>
+        </div>
+
+        <div class="project">
+            <h1 data-text="MY PROJECT">MY PROJECT</h1>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio__col" data-cat="adaptive">
+                <div class="work" data-modal="#modal_project_1">
+                    <div class="shadow">
+                        <a class="work__img" href="https://stekloduvmaster.000webhostapp.com"><img class="img" src="img/work.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            PROJECT MASTERSKAYA-STECLODUV
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="desktop">
+                <div class="work" data-modal="#modal_project_2">
+                    <div class="shadow">
+                        <a class="work__img" href="https://varavara12.github.io/React-social-project"><img class="img" src="img/react.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            REACT-REDUX
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="desktop">
+                <div class="work" data-modal="#modal_project_3">
+                    <div class="shadow">
+                        <a class="work__img" href="#"><img class="img" src="img/tour.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            PROJECT GO- TOUR
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="adaptive">
+                <div class="work" data-modal="#modal_project_4">
+                    <div class="shadow">
+                        <a class="work__img" href="#"><img class="img" src="img/market.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            INTERNET-MARKET
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="desktop">
+                <div class="work" data-modal="#modal_project_5">
+                    <div class="shadow">
+                        <a class="work__img" href="#"><img class="img" src="img/japan.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            PROJECT JAPAN
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="adaptive">
+                <div class="work " data-modal="#modal_project_6">
+                    <div class="shadow">
+                        <a class="work__img" href="#"><img class="img" src="img/git.jpg" alt=""></a>
+                    </div>
+                    <div class="work_content">
+                        <div class="work__title">
+                            MY PROJECT IN GITHUB
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Portfolio -->
+    </div> <!-- Container -->
+</div> <!-- Works -->
+
+<!-- About-->
+<section class="about">
+    <div class="container">
+
+        <div class="water">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+
+        <div class="about__inner">
+
+            <div class="about__photo">
+                <img class="img" src="img/user2.png" alt="">
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">ABOUT ME</h3>
+                <h2 class="about__bigtitle">WHO AM I</h2>
+                <div class="about__text">
+                    
+                    <p>
+                        Good day colleagues!)
+                        In a nutshell about my self: I like to think, study and communicate, work
+                        hard and with pleasure. In response, I am waiting for interesting projects, worthy of payment
+                        and the opportunity for professional growth.
+                        Call me to discuss in more detail and I hope to see you at the interview.
+                    </p>
+                </div>
+                <div class="btr">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                </div>
+                <div class="btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
+                </div>
+
+            </div> <!-- about__content -->
+        </div> <!-- about__inner -->
+
+    </div> <!-- container -->
+</section>
+
+<div class="reviews">
+    <div class="container">
+        <div class="reviews_col">
+            Contact
+        </div>
+        <div class="reviews__item">
+            <div class="reviews__contact">
+                tel: +380635792739
+            </div>
+            <div class="reviews__contact">
+                email: narodnyjpikap@gmail.com
+            </div>
+            <div class="reviews__contact">
+                city: Charkov
+            </div>
+        </div>
+    </div>
+</div> <!-- reviews -->
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2019 U143 Portfolio
+                </div>
+                <div class="footer__social">
+                    <a href="http://www.linkedin.com/in/vitalii-kropotkin-040b4b182" target="_blank" class="social__link"><img src="img/social/linked.svg" alt=""></a>
+                    <a href="https://github.com/Varavara12" target="_blank" class="social__link"><img src="img/social/git.svg" alt=""></a>
+                    <a href="https://www.facebook.com/vitalik.kropotkin" target="_blank" class="social__link"><img src="img/social/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/vitalikkropotkin/?hl=ru" target="_blank" class="social__link"><img src="img/social/instagram.svg" alt=""></a>
+                    <a href="https://vk.com/vitalik_pro" target="_blank" class="social__link"><img src="img/social/vk.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <a href="#" class="footer__nav-link">Work</a>
+                <a href="#" class="footer__nav-link">About me</a>
+                <a href="#" class="footer__nav-link">Blog</a>
+                <a href="#" class="footer__nav-link">Contact</a>
+                <a class="button button--moema button--text-thick button--text-upper button--size-s" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            </div>
+        </div> <!-- footer__inner -->
+    </div>
+</footer>
+
+
+<!-- Modals -->
+
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/modal__work-photo.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/modal__work-photo-1.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/modal__work-photo-2.jpg" alt="">
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Master-Stekloduv</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span> 2019
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+    
+                <div class="modal__work-text">
+                    <h3>Used such technologies</h3>
+                    <p>
+                        <span class="timeline__span">-HTML--</span><br>
+                        <span class="timeline__span">-SASS--</span><br>
+                        <span class="timeline__span">-JAVASCRIPT--</span><br>
+                        <span class="timeline__span">-jquery--</span><br>
+                        <span class="timeline__span">-bootstrap--</span><br>
+                        Plugins <br>
+                        <span class="timeline__span">-Owl-Carousel--</span><br>
+                        <span class="timeline__span">-css-hamburgers--</span><br>
+                        <span class="timeline__span">-mmenu--</span><br>
+                        <span class="timeline__span">-fotorama--</span><br>
+                        <span class="timeline__span">-izimodal--</span><br>
+                        <span class="timeline__span">-font awesome--</span><br>
+                    </p>
+    
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://stekloduvmaster.000webhostapp.com" target="_blank">OPEN PROJECT</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/react.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/react1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Social Network in React</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span> REACT-REDUX
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+                
+                <div class="modal__work-text">
+                    <h3>Used such technologies</h3>
+                    <p>
+                        <span class="timeline__span">-HTML--</span><br>
+                        <span class="timeline__span">-module-css--</span><br>
+                        <span class="timeline__span">-JAVASCRIPT--</span><br>
+                        <span class="timeline__span">-jsx--</span><br>
+                        <span class="timeline__span">-grid--</span><br>
+                        Plugins <br>
+                        <span class="timeline__span">-Redux--</span><br>
+                        <span class="timeline__span">-Redux-form--</span><br>
+                        <span class="timeline__span">-Reselect--</span><br>
+                        <span class="timeline__span">-withrouter--</span><br>
+                        <span class="timeline__span">-Thunk--</span><br>
+                        <span class="timeline__span">-HOC--</span><br>
+                        <span class="timeline__span">-hoocs--</span><br>
+                        <span class="timeline__span">-compose--</span><br>
+                        <span class="timeline__span">-font awesome--</span><br>
+                    </p>
+                
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://varavara12.github.io/React-social-project" target="_blank">OPEN PROJECT</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/tour.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/tour2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/tour3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Go-Tour</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span>  Lending
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+                
+                <div class="modal__work-text">
+                     <h3>Used such technologies</h3>
+                    <p>
+                        <span class="timeline__span">-HTML--</span><br>
+                        <span class="timeline__span">-scss--</span><br>
+                        <span class="timeline__span">-JAVASCRIPT--</span><br>
+                        <span class="timeline__span">-bootstrap--</span><br>
+                        <span class="timeline__span">-grid--</span><br>
+                        Plugins <br>
+                        <span class="timeline__span">-Animate.css--</span><br>
+                        <span class="timeline__span">-slick slider--</span><br>
+                    </p>
+                
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://varavara12.github.io/tour" target="_blank">OPEN PROJECT</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+<div class="modal" id="modal_project_4">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/market.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/market2.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Market</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span>  Internet Market
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+                
+                <div class="modal__work-text">
+                      <h3>Used such technologies</h3>
+                    <p>
+                        <span class="timeline__span">-pug--</span><br>
+                        <span class="timeline__span">-styl--</span><br>
+                        <span class="timeline__span">-JAVASCRIPT--</span><br>
+                        <span class="timeline__span">-jquery--</span><br>
+                        <span class="timeline__span">-Json--</span><br>
+                        <span class="timeline__span">-bootstrap--</span><br>
+                        <span class="timeline__span">-font awesome--</span><br>
+                        Plugins <br>
+                        <span class="timeline__span">-slick slider--</span><br>
+                    </p>
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://varavara12.github.io/market-hosting" target="_blank">OPEN PROJECT</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+<div class="modal" id="modal_project_5">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/japan.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/japan2.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Japan</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span>  Tour
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+                
+                <div class="modal__work-text">
+                   <h3>Used such technologies</h3>
+                    <p>
+                        <span class="timeline__span">-HTML--</span><br>
+                        <span class="timeline__span">-scss--</span><br>
+                        <span class="timeline__span">---</span><br>
+                        <span class="timeline__span">---</span><br>
+                        <span class="timeline__span">---</span><br>
+                        <span class="timeline__span">---</span><br>
+                        <span class="timeline__span">---</span><br>
+                        <span class="timeline__span">---</span><br>
+                        
+                    </p>
+                
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://varavara12.github.io/Japan-host" target="_blank">OPEN PROJECT</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+<div class="modal" id="modal_project_6">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        
+        <div class="modal__work">
+            
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/git.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal__work-photo" src="img/modals/git2.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="modal__work-content">
+                
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">my projects in GitHub</h3>
+                    <div class="modal__work-info">
+                        CATEGORY <span class="modal__work-info-divider">|</span>  GitHub
+                    </div>
+                </div>
+                
+                <div class="modal__work-author">
+                    <div class="modal__work-author__title">Author:</div>
+                    <div class="modal__work-author__company">Kropotkin Vitalii</div>
+                </div>
+                
+                <div class="modal__work-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque dolorum incidunt
+                        omnis quod quos, sed? Aut delectus itaque magni perspiciatis, sapiente tempora ullam veniam? Ab
+                        adipisci alias distinctio facilis labore laborum mollitia odio, pariatur, quae qui sequi, unde
+                        velit vitae? Ab consequatur eius esse illum incidunt quisquam ullam ut.
+                    </p>
+                
+                </div>
+                
+                <div class="modal__work-btn">
+                    <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                       href="https://github.com/Varavara12" target="_blank">OPEN GITHUB</a>
+                </div>
+                
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn modal__btn-prev slickPrev" type="button">
+                        <img src="img/back.svg" height="14" alt="back">
+                        Previous
+                    </button>
+                    <button class="modal__work-btn modal__btn-next slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="14" alt="next">
+                    </button>
+                </div>
+            
+            </div> <!-- modal__work-content -->
+        </div> <!-- modal__work -->
+    
+    </div><!-- modal__dialog -->
+</div>
+
+
+<div class="modal" id="modal_resume" >
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+        <div class="modal__content">
+            <h3 class="modal__title text-center">RESUME</h3>
+
+            <div class="text__center">
+                <a class="button button--moema button--text-thick button--text-upper button--size-s btr" href="./download/CV-Kropotkin-Vitalii.pdf" download="" >DOWNLOAD PDF</a>
+                <a class="button button--moema button--text-thick button--text-upper button--size-s btr thin" href="#">PRINT</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col timeline__col--left">
+                    <h4 class="timeline__title">SKILLS</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018</time>
+                        <h5 class="timeline__subtitle">HTML:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -HTML5 <br>
+                                <span class="timeline__span">-beginner--</span>PUG(JADE)<br>
+                                <span class="timeline__span">-beginner--</span>SLIM <br>
+                                <span class="timeline__span">-beginner--</span>HAML <br>
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use HTML5 in my work
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018</time>
+                        <h5 class="timeline__subtitle">Style:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -CSS3 <br>
+                                -SASS<br>
+                                -SCSS <br>
+                                -LESS<br>
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use preprocessor LESS in my work
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2019</time>
+                        <h5 class="timeline__subtitle">JavaScript:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -JS, ESP5, ES6 <br>
+                                -React Redux  <br>
+                                -jQuery<br>
+                                -AJAX<br>
+                                <span class="timeline__span">-beginner--</span>TYPESCRIPT<br>
+                                -JSON<br>
+                                -BOOTSTRAP<br>
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use REACT-REDUX, JAVASCRIPT, JQUERY, BOOTSTRAP in my work
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018</time>
+                        <h5 class="timeline__subtitle"> version control system:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -GitHub <br>
+                                <span class="timeline__span">-beginner--</span>gitlab <br>
+
+
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use GitHub in my work
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018</time>
+                        <h5 class="timeline__subtitle"> build system:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -Gulp 4 <br>
+                                <span class="timeline__span">-beginner--</span>Webpack <br>
+                                -Parcel<br>
+
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use Gulp in my work
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018</time>
+                        <h5 class="timeline__subtitle"> ide:</h5>
+                        <div class="timeline__text">
+                            <p>
+                                -WebStorm <br>
+                                -sublime text 3 <br>
+                                <span class="timeline__span">-beginner--</span>atom <br>
+                            </p>
+                        </div>
+                        <div class="timeline__text--title">
+                            <p>
+                                Mostly I use WebStorm in my work
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="timeline__col timeline__col--right">
+                    <h4 class="timeline__title ">EDUCATION</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2018 - 2019</time>
+                        <h5 class="timeline__subtitle">Computer School Hillel</h5>
+                        <div class="timeline__text">
+                            <p>
+                                Specialty: Front-end
+                            </p>
+                        </div>
+                        <div class="timeline__text--button">
+                            <p>
+                                Certificate: <a class="timeline__text--link" href="https://certificate.ithillel.ua/view/71347437/en" target="_blank">link</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date">2009-2013</time>
+                        <h5 class="timeline__subtitle">Kharkov Institute of Business and Management.</h5>
+                        <div class="timeline__text">
+                            <p>
+                                Specialty: Accountant
+                            </p>
+                        </div>
+
+                    </div>
+                    <h4 class="timeline__title ">EXPERIENCE</h4>
+                    <div class="timeline__text">
+                        <p>
+                            Design software:
+                        </p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Adobe Photoshop</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">CorelDraw</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 75%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Adobe XD</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Figma</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 70%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                    </div><!-- progress-bar -->
+
+                    <div class="timeline__text">
+                        <p>
+                            Graphics program:
+                        </p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Adobe Premiere</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Adobe After Effects</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 60%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Maya</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 50%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- progress-bar__item -->
+
+                    </div><!-- progress-bar -->
+
+                    <div class="timeline__item timeline__item--skills">
+                        <h5 class="timeline__subtitle">Professional and other skills:</h5>
+                        <div class="timeline__text">
+                            <p class="timeline__text--skills">
+                                --adaptive, cross-browser layout- <br>
+                                --Code optimization-<br>
+                                --Created architecture and content of websites-<span class="timeline__span">-beginner--</span> <br>
+                                --Website and domain transfers-<br>
+                                --use sprites in css-<br>
+                                --Ability to understand someone else's code-<span class="timeline__span">-beginner--</span><br>
+                                --Connection of non-standard fonts-<br>
+                                --Block the fixed / liquid layouts-<br>
+                                --BEM methodology-<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <h5 class="timeline__subtitle timeline__subtitle--sub "> Languages:</h5>
+                        <div class="timeline__text timeline__text--letter">
+                            <p>
+                                English <span class="timeline__span">-Pre-Intermediate--</span><br>
+                                polish <span class="timeline__span">-Upper-Intermediate--</span><br>
+                                ukrainian <span class="timeline__span">-Native--</span><br>
+                                russian<span class="timeline__span">-Native--</span><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <h5 class="timeline__subtitle timeline__subtitle--sub "> Additional information:</h5>
+                        <div class="timeline__text timeline__text--letter">
+                            <p>
+                                I am a huge fan of IT and programming. Currently, I'm studying JavaScript and
+                                programming in general. I'm friendly, non-conflictual person and a good team player. I'm
+                                searching trainee/junior position and I have a great desire to grow my skills in a
+                                professional
+                                way. In my spare time, I like to read literature for professional and personal
+                                development, and programming on Arduino
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div><!-- timeline__col timeline__col--right -->
+            </div> <!-- timeline -->
+
+        </div> <!-- modal__content -->
+    </div><!-- modal__dialog -->
+</div> <!-- modal -->
+
+
+<div class="modal" id="modal_hire_me" >
+    <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title modal__title--big">LET'S TALK!</h3>
+                <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="img/call.svg" alt="">
+                        +380635792739
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="img/mail.svg" alt="">
+                        narodnyjpikap@gmail.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Adress e-mail</label>
+                        <input type="text" class="form__input" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Request</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text"
+                                  placeholder="Type your request..."></textarea>
+                    </div>
+
+                    <div class="text__right">
+                        <a class="button button--moema button--text-thick button--text-upper button--size-s btr"
+                           href="#">SEND</a>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="contact__right">
+
+            </div>
+
+        </div><!-- contact -->
+
+    </div><!-- modal__dialog -->
+</div> <!-- modal -->
+
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
